@@ -1,14 +1,14 @@
-# def scope_test():
-#     x=123  # local variable
-# scope_test()
+def scope_test():
+    x=123  # local variable
+scope_test()
 # print(x)
 
-# def my_function():
-#     print("do i know the variable!",var)
+def my_function():
+    print("do i know the variable!",var)
 
-# var =1  #global variable
-# my_function()
-# print(var)
+var =1  #global variable
+my_function()
+print(var)
 
 def mult(x):
     var=7
@@ -90,16 +90,6 @@ def factorial(number):
     
 print(factorial(5))
 
-#TUPlE
-my_tuple = (1,10,100)
 
-t1= my_tuple + (1000,10000)
-t2=my_tuple*3
-
-print(len(t2))
-print(t1)
-print(t2)
-print(10 in my_tuple)
-print(-10 not in my_tuple)
 
 

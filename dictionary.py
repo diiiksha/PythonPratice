@@ -40,37 +40,87 @@
 # for value in dictionary.values():
 #     print(value)
 
-pol_eng_dictionary = {
-    "zamek":"castle",
-    "woda":"water",
-    "galeba":"soil"
-}
-print("pol_eng_dictionary:",pol_eng_dictionary)
-copy_dictionary = pol_eng_dictionary.copy()
+# pol_eng_dictionary = {
+#     "zamek":"castle",
+#     "woda":"water",
+#     "galeba":"soil"
+# }
+# print("pol_eng_dictionary:",pol_eng_dictionary)
+# copy_dictionary = pol_eng_dictionary.copy()
 
-print("copy_dictionary:",copy_dictionary)
+# print("copy_dictionary:",copy_dictionary)
 
-pol_eng_dictionary["zamek"] = "lock"
-item = pol_eng_dictionary["zamek"]
-print(item)
-print(pol_eng_dictionary)
+# pol_eng_dictionary["zamek"] = "lock"
+# item = pol_eng_dictionary["zamek"]
+# print(item)
+# print(pol_eng_dictionary)
 
-phonebook = {}
-print(phonebook)
-phonebook["adam"] = 34567898 #create/add a key value pair
-print(phonebook)   #ouputs:{'adam:34566788}
+# phonebook = {}
+# print(phonebook)
+# phonebook["adam"] = 34567898 #create/add a key value pair
+# print(phonebook)   #ouputs:{'adam:34566788}
 
-del phonebook["adam"]
-print(phonebook)
+# del phonebook["adam"]
+# print(phonebook)
 
-pol_eng_dictionary = {"kwait":"flower"}
+# pol_eng_dictionary = {"kwait":"flower"}
 
-pol_eng_dictionary.update(
-    {
-        "gleba":"soil"
-    }
-)
-print(pol_eng_dictionary)
-pol_eng_dictionary.popitem()
-print(pol_eng_dictionary)
+# pol_eng_dictionary.update(
+#     {
+#         "gleba":"soil"
+#     }
+# )
+# print(pol_eng_dictionary)
+# pol_eng_dictionary.popitem()
+# print(pol_eng_dictionary)
                       
+# pol_eng_dictionary = {
+#     "zamek":"castle",
+#     "woda":"water",
+#     "gleba":"soil"
+# }
+
+# if "zamek1" in pol_eng_dictionary:
+#     print("Yes!zamek1 is present in the dictionary")
+# else:
+#     print("no! zamek1 is not prsnet in the dictionary")
+
+# print(pol_eng_dictionary)
+# print(len(pol_eng_dictionary))
+
+# del pol_eng_dictionary["zamek"]
+# print(pol_eng_dictionary)
+# print(len(pol_eng_dictionary))
+
+# pol_eng_dictionary.clear()
+# print(pol_eng_dictionary)
+# print(len(pol_eng_dictionary))
+
+# del pol_eng_dictionary
+# print(pol_eng_dictionary)
+
+#PRACTICE 
+sd = {}
+
+while True:
+    name = input("Enter student's name:")
+    if name == "":
+        break
+    score = int(input(f"Enter {name}'s score:"))
+
+    if score not in range(1,11):
+        break
+    if name in sd:
+        sd[name] += (score, )
+    else:
+        sd[name] = (score, ) 
+
+print(sd)
+
+for name,mark in sd.items():
+    sum = 0
+    for m in mark:
+        sum += m
+    print(name,"->",sum/len(mark))
+
+    
